@@ -17,7 +17,7 @@ find all text
 
 ```
 from fastai.vision.all import Path
-Path(directory).rglob('*.JPEG')
+[i for i in list(Path(directory).rglob('*.JPEG')) if 'ipynb' not in str(i)]
 ```
 
 
