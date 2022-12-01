@@ -10,7 +10,7 @@ pickle.dump(val_dict, open('path.pickle', 'wb'), protocol=pickle.HIGHEST_PROTOCO
 load_dict = pickle.load(open('path.pickle', 'rb'))
 ```   
 
-find all text  
+text slicing
 ```
 [n for (n, e) in enumerate(text) if e == '/']
 ```
