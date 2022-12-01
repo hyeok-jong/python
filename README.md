@@ -14,3 +14,24 @@ find all text
 ```
 [n for (n, e) in enumerate(text) if e == '/']
 ```
+
+```
+from fastai.vision.all import Path
+Path(directory).rglob('*.JPEG')
+```
+
+
+```
+import wget
+import math
+
+def bar_custom(current, total, width=80):
+    width=30
+    avail_dots = width-2
+    shaded_dots = int(math.floor(float(current) / total * avail_dots))
+    percent_bar = '[' + '■'*shaded_dots + ' '*(avail_dots-shaded_dots) + ']'
+    progress = "%d%% %s [%d / %d]" % (current / total * 100, percent_bar, current, total)
+    return progress
+    
+wget.download(classifier, out = '/home/lhj/diffusion_dataset', bar=bar_custom)
+```
