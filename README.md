@@ -3,6 +3,7 @@
 open
 ```
 # txt  
+open('readme.txt', 'w').write('readme')
 lines = open('path.txt').readlines()  
 
 # pickle  
