@@ -3,7 +3,7 @@
 open
 ```
 # txt  
-open('readme.txt', 'w').write('readme')
+open('readme.txt', 'w') .writelines(lines)
 lines = open('path.txt').readlines()  
 
 # pickle  
