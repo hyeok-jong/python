@@ -1,5 +1,13 @@
 # python  
 
+save Namespace args  
+```
+with open('test.txt', 'w') as f:
+    for keys in vars(args).keys():
+        f.write(f'{keys} : {vars(args)[keys]}')
+        f.write('\n')
+```
+
 open
 ```
 # txt  
