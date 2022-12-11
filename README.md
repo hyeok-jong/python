@@ -27,8 +27,11 @@ load_dict = pickle.load(open('path.pickle', 'rb'))
 
 ## find all certain text
 ```
-[n for (n, e) in enumerate(text) if e == '/']
+[n for (n, e) in enumerate(text) if e == '/']  
+# or if just split  
+'text'.split
 ```
+
 
 
 ## use Path from fastai
