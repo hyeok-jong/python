@@ -1,6 +1,6 @@
 # python  
 
-save Namespace args  
+## save Namespace args as txt
 ```
 with open('test.txt', 'w') as f:
     for keys in vars(args).keys():
@@ -8,28 +8,36 @@ with open('test.txt', 'w') as f:
         f.write('\n')
 ```
 
-open
+
+## read and write txt filse
 ```
-# txt  
+ 
 open('readme.txt', 'w') .writelines(lines)
 lines = open('path.txt').readlines()  
+```
 
-# pickle  
+
+
+## read and write pickle files
+``` 
 pickle.dump(val_dict, open('path.pickle', 'wb'), protocol=pickle.HIGHEST_PROTOCOL)
 load_dict = pickle.load(open('path.pickle', 'rb'))
 ```   
 
-text slicing
+
+## find all certain text
 ```
 [n for (n, e) in enumerate(text) if e == '/']
 ```
 
+
+## use Path from fastai
 ```
 from fastai.vision.all import Path
 [i for i in list(Path(directory).rglob('*.JPEG')) if 'ipynb' not in str(i)]
 ```
 
-
+## use wget
 ```
 import wget
 import math
